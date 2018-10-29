@@ -132,7 +132,6 @@ public class KeywhizService extends Application<KeywhizConfig> {
         injector.getInstance(AutomationClientAuthFactory.class),
         injector.getInstance(UserAuthFactory.class)));
 
-
     logger.debug("Registering resources");
     jersey.register(injector.getInstance(ClientResource.class));
     jersey.register(injector.getInstance(ClientsResource.class));
