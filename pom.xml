@@ -36,8 +36,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <dropwizard.version>0.8.4</dropwizard.version>
-    <guice.version>4.1.0</guice.version>
+    <dropwizard.version>0.9.0</dropwizard.version>
+    <guice.version>4.2.1</guice.version>
     <jackson.version>2.6.1</jackson.version>
     <jooq.version>3.11.5</jooq.version>
     <powermock.version>1.7.4</powermock.version>
@@ -549,7 +549,7 @@
               <configuration>
                 <rules>
                   <evaluateBeanshell>
-                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") &gt; 128</condition>
+                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") > 128</condition>
                     <message>
 Please install the unlimited strength JCE crypt policy files for your Java JDK.
 Without these, crypto operations are crippled consistently.
