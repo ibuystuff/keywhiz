@@ -36,7 +36,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <dropwizard.version>0.8.4</dropwizard.version>
+    <dropwizard.version>0.9.0</dropwizard.version>
     <guice.version>4.1.0</guice.version>
     <jackson.version>2.6.1</jackson.version>
     <jooq.version>3.11.5</jooq.version>
@@ -107,7 +107,7 @@
       <dependency>
         <groupId>com.tradier</groupId>
         <artifactId>dropwizard-raven</artifactId>
-        <version>0.9.3</version>
+        <version>1.1.0</version>
       </dependency>
       <dependency>
         <groupId>com.beust</groupId>
@@ -224,12 +224,12 @@
       <dependency>
         <groupId>io.dropwizard.modules</groupId>
         <artifactId>dropwizard-java8</artifactId>
-        <version>0.8.0-2</version>
+        <version>0.9.0-1</version>
       </dependency>
       <dependency>
         <groupId>io.dropwizard.modules</groupId>
         <artifactId>dropwizard-java8-auth</artifactId>
-        <version>0.8.0-2</version>
+        <version>0.9.0-1</version>
       </dependency>
       <dependency>
         <groupId>javax.inject</groupId>
@@ -549,7 +549,7 @@
               <configuration>
                 <rules>
                   <evaluateBeanshell>
-                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") &gt; 128</condition>
+                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") > 128</condition>
                     <message>
 Please install the unlimited strength JCE crypt policy files for your Java JDK.
 Without these, crypto operations are crippled consistently.
