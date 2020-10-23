@@ -162,7 +162,7 @@
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>23.5-jre</version>
+        <version>30.0-android</version>
       </dependency>
       <dependency>
         <groupId>com.squareup.okhttp3</groupId>
@@ -549,7 +549,7 @@
               <configuration>
                 <rules>
                   <evaluateBeanshell>
-                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") &gt; 128</condition>
+                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") > 128</condition>
                     <message>
 Please install the unlimited strength JCE crypt policy files for your Java JDK.
 Without these, crypto operations are crippled consistently.
