@@ -259,12 +259,12 @@
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcprov-jdk15on</artifactId>
-        <version>1.58</version>
+        <version>1.61</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcpg-jdk15on</artifactId>
-        <version>1.56</version>
+        <version>1.61</version>
       </dependency>
       <dependency>
         <groupId>org.easymock</groupId>
@@ -549,7 +549,7 @@
               <configuration>
                 <rules>
                   <evaluateBeanshell>
-                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") &gt; 128</condition>
+                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") > 128</condition>
                     <message>
 Please install the unlimited strength JCE crypt policy files for your Java JDK.
 Without these, crypto operations are crippled consistently.
