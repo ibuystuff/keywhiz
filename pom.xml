@@ -324,7 +324,7 @@
       <dependency>
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
-        <version>1.4.187</version>
+        <version>2.1.210</version>
       </dependency>
       <dependency>
         <groupId>mysql</groupId>
@@ -549,7 +549,7 @@
               <configuration>
                 <rules>
                   <evaluateBeanshell>
-                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") &gt; 128</condition>
+                    <condition>javax.crypto.Cipher.getMaxAllowedKeyLength("AES") > 128</condition>
                     <message>
 Please install the unlimited strength JCE crypt policy files for your Java JDK.
 Without these, crypto operations are crippled consistently.
